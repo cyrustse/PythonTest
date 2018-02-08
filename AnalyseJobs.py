@@ -1,6 +1,8 @@
 import pandas as pd;
 
-df = pd.read_csv('2018-02-02.csv');
+fileName ='2018-02-08.csv';
+
+df = pd.read_csv(fileName);
 df_com = pd.read_csv('Company.csv');
 # print(df.head(3));
 
@@ -22,8 +24,10 @@ def main():
     # print(df_v2.head(3));
     # print(df_v2.dtypes);
     # print(df_v2[~(df_v2['Type'] == 'Agent')].head(5));
-    print(df_v2[~(df_v2['Type'] == 'Agent') & (df_v2['Company'].str.contains(_SearchName, case=False))].head(5));
+    # print(df_v2[~(df_v2['Type'] == 'Agent') & (df_v2['Company'].str.contains(_SearchName, case=False))].head(5));
+    # writeCSV('2018-02-08_v2',df_v2);
+    print(list(df_v2));
+    df_v2.to_csv('2018-02-08_v2.csv', sep=',', encoding='utf-8');
 
 if __name__ == "__main__":
     main();
-
