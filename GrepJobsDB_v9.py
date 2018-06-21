@@ -58,7 +58,7 @@ def removeCSV(FileName):
         return;
 
 def main():
-    pageYouNeed = 5;
+    pageYouNeed = 10;
     csvName = str(datetime.datetime.now().strftime('%Y-%m-%d'));
     removeCSV(csvName);
     JobList = [];
