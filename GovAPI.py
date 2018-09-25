@@ -88,14 +88,16 @@ def current_weather(location, api_key=SAMPLE_API_KEY):
     return return_dict;
 
 def main():
-    Degree = current_weather('Hong Kong');
-    print(Degree);
+    # Degree = current_weather('Hong Kong');
+    # print(Degree);
 
-    print("Current Degree: " + str(weatherConversion('Kelvin', Degree["temp"])));
-    print("Today Max: " + str(weatherConversion('Kelvin', Degree["temp_max"])));
-    print("Today Min: " + str(weatherConversion('Kelvin', Degree["temp_min"])));
+    # print("Current Degree: " + str(weatherConversion('Kelvin', Degree["temp"])));
+    # print("Today Max: " + str(weatherConversion('Kelvin', Degree["temp_max"])));
+    # print("Today Min: " + str(weatherConversion('Kelvin', Degree["temp_min"])));
     # print(weatherConversion('Kelvin',Degree));
     # print(getParkingSpacesWithVacancies());
+    # print(getParkingVacancies());
+    print(getParkingSpaces());
 
 if __name__ == "__main__":
     main();
